@@ -1111,30 +1111,38 @@
                       <!-- Reply Messages End -->
 
                       <!-- Contact Form Start -->
-                       <form action="send.php" method="POST" class="form contact-form">
-                        <div class="col-12 col-md-6 form__item animate-in-up">
-<input type="text" name="name" placeholder="الاسم" required>
-                        </div>
-                        <div class="col-12 col-md-6 form__item animate-in-up">
-                        <input type="email" name="email" placeholder="الإيميل" required>    
-                        </div>
-                        <div class="col-12 col-md-6 form__item animate-in-up">
-                         <input type="tel" name="tel" placeholder="رقم الجوال" required>    
-                        </div>
-                        <div class="col-12 col-md-6 form__item animate-in-up">
-                        <textarea name="message" placeholder="الرسالة" required></textarea>    
-                        </div>
-                        <div class="col-12 form__item animate-in-up">
-                                      <button class="btn btn-default btn-hover btn-hover-accent d-none" type="submit">
+                      <form class="form contact-form" id="form">
+                          <!-- Hidden Required Fields -->
+                          <input type="hidden" name="project_name" value="Starter Template">
+                          <input type="hidden" name="admin_email" value="support@mixdesign.club">
+                          <input type="hidden" name="form_subject" value="Contact Form Message">
+                          <!-- END Hidden Required Fields-->
+                          <div class="container-fluid p-0">
+                              <div class="row gx-0">
+                                  <div class="col-12 col-md-6 form__item animate-in-up">
+                                      <input type="text" name="from_name" id="from_name" placeholder="Your Name*" required>
+                                  </div>
+                                  <div class="col-12 col-md-6 form__item animate-in-up">
+                                      <input type="text" name="Company" placeholder="Company Name">
+                                  </div>
+                                  <div class="col-12 col-md-6 form__item animate-in-up">
+                                      <input type="email" name="E-mail" placeholder="Email Adress*" required>
+                                  </div>
+                                  <div class="col-12 col-md-6 form__item animate-in-up">
+                                      <input type="tel" name="Phone" placeholder="Phone Number*" required>
+                                  </div>
+                                  <div class="col-12 form__item animate-in-up">
+                                      <textarea name="message" id="message" placeholder="A Few Words*" required></textarea>
+                                  </div>
+                                  <div class="col-12 form__item animate-in-up">
+                                      <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
                                           <span class="btn-caption">Send Message</span>
                                           <i class="ph-bold ph-paper-plane-tilt"></i>
                                       </button>
-                                      <button type="submit">إرسال</button>
                                   </div>
-                        
-                        
-                        </form>
-                   
+                              </div>
+                          </div>
+                      </form>
                       <!-- Contact Form End -->						
                   </div>
               </div>
