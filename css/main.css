@@ -1,22 +1,9 @@
-
 /* Syne font */
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&amp;display=swap");
-/* ------------------------------------------------*/
-/* Fonts End */
-/* ------------------------------------------------*/
-/* ------------------------------------------------*/
-/* Template Backgrounds Start */
-/* ------------------------------------------------*/
 .image-background {
   background-image: url(../img/backgrounds/1920x1080-main-bg.webp);
 }
 
-/* ------------------------------------------------*/
-/* Template Backgrounds End */
-/* ------------------------------------------------*/
-/* ------------------------------------------------*/
-/* Variables Start */
-/* ------------------------------------------------*/
 :root {
   --_size: 1.6rem;
   --_font-default: "Syne", sans-serif;
@@ -540,17 +527,17 @@ h1 {
 }
 @media only screen and (min-width: 1200px) {
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 @media only screen and (min-width: 1400px) {
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   h1 {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 }
 
@@ -3002,16 +2989,13 @@ form textarea:required:valid {
   }
 }
 
-.logo__caption {
-  padding-left: 2rem;
-}
 .logo__caption p {
   font: normal 700 2.3rem/1.06 var(--_font-accent);
   color: var(--t-bright);
 }
 @media only screen and (min-width: 1400px) {
   .logo__caption p {
-    font-size: 3.6rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -3020,7 +3004,7 @@ form textarea:required:valid {
   -moz-border-radius: var(--_radius-l);
   border-radius: var(--_radius-l);
   margin-bottom: 0.8rem;
-  height: 250px;
+  height: 200px;
   display: flex;
   align-items: center;
 }
