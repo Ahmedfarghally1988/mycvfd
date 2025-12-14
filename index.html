@@ -1238,7 +1238,7 @@
                         <!-- Reply Messages End -->
 
                         <!-- Contact Form Start -->
-                        <form class="form contact-form" id="contactForm">                          
+                        <form class="form contact-form" id="contactForm">
                             <div class="container-fluid p-0">
                                 <div class="row gx-0">
                                     <div class="col-12 col-md-12 form__item animate-in-up">
@@ -1464,49 +1464,49 @@
     <script src="js/gallery-init.js"></script>
 
 
-   
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-(function(){
-  emailjs.init("1UR-xecYzXTyy7O9i");
-})();
 
-document.getElementById("contactForm").addEventListener("submit", function(e){
-  e.preventDefault();
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        (function () {
+            emailjs.init("1UR-xecYzXTyy7O9i");
+        })();
 
-  Swal.fire({
-    title: 'جاري الإرسال...',
-    text: 'من فضلك انتظر',
-    allowOutsideClick: false,
-    didOpen: () => {
-      Swal.showLoading()
-    }
-  });
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
 
-  emailjs.sendForm(
-    "service_5q0ag5v",
+            Swal.fire({
+                title: 'Sending...',
+                text: 'Please wait',
+                allowOutsideClick: false,
+                didOpen: () => {
+                    Swal.showLoading()
+                }
+            });
+
+            emailjs.sendForm(
+                "service_5q0ag5v",
                 "template_ojik8se",
-    this
-  ).then(() => {
-    Swal.fire({
-      icon: 'success',
-      title: 'تم الإرسال بنجاح 🎉',
-      text: 'تم استلام رسالتك وسنقوم بالرد عليك في أقرب وقت',
-      confirmButtonText: 'تمام'
-    });
+                this
+            ).then(() => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Sent successfully 🎉',
+                    text: 'Your message has been received and we will reply to you as soon as possible.',
+                    confirmButtonText: 'Okay'
+                });
 
-    this.reset();
+                this.reset();
 
-  }).catch(() => {
-    Swal.fire({
-      icon: 'error',
-      title: 'حصل خطأ ❌',
-      text: 'من فضلك حاول مرة أخرى'
-    });
-  });
-});
-</script>
+            }).catch(() => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'An error occurred ❌',
+                    text: 'Please try again'
+                });
+            });
+        });
+    </script>
 
 </body>
 
